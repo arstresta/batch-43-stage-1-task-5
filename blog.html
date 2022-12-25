@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="index.html"><img src="asset/img/logo.png" alt=""></a>
+                    </div>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="btn-contact">
+                <a href="contact-form.html">Contact Me</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <form class="form" onsubmit="getPost(event)">
+            <div class="form-control">
+                <div class="form-title">ADD MY PROJECT</div>
+                <div class="form-grup">
+                    <div class="label">Project Name</div>
+                    <input type="text" id="title">
+                    <div class="double">
+                        <div class="left">
+                            <div class="label">Start Date</div>
+                            <input type="date" id="startDate">
+                        </div>
+                        <div class="right">
+                            <div class="label">End Date</div>
+                            <input type="date" id="endDate">
+                        </div>
+                    </div>
+                    <div class="label">Description</div>
+                    <textarea name="message" id="desc" rows="5"></textarea>
+                    <div class="label">Technology</div>
+                    <div class="tech">
+                        <div class="item1">
+                            <input type="checkbox" value="Node Js" id="node"> Node Js
+                        </div>
+                        <div class="item2">
+                            <input type="checkbox" value="React Js" id="react"> React Js 
+                        </div>
+                        <div class="item3">
+                            <input type="checkbox" value="Next Js" id="next"> Next Js
+                        </div>
+                        <div class="item4">
+                            <input type="checkbox" value="TypeScript" id="type"> TypeScript
+                        </div>
+                    </div>
+                    <div class="label">Upload Image</div>
+                    <input type="file" name="image" id="image">
+                    <div class="button" onclick="">
+                        <button class="btn-contact">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="sparator"></div>
+        <div class="blog" id="blog">
+            <!-- <div class="card-blog">
+                <div class="image">
+                    <img src="asset/img/foto.jpg" alt="">
+                </div>
+                <div class="desc">
+                    <div class="text-title"><a href="detail-blog.html">Moch. Dira Issyari</a></div>
+                    <div class="durasi">durasi : 5 bulan</div>
+                    <div class="text-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, officia dolorum. Pariatur quasi mollitia perspiciatis libero, quae asperiores? Blanditiis, soluta?</div>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-playstation"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+                <div class="button">
+                    <button class="btn">Edit</button>
+                    <button class="btn">Delete</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+<script src="asset/js/script.js"></script>
+</html>

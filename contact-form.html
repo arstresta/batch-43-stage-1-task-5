@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="index.html"><img src="asset/img/logo.png" alt=""></a>
+                    </div>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="btn-contact">
+                <a href="contact-form.html">Contact Me</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="form">
+            <div class="form-control">
+                <div class="form-title">GET IN TOUCH</div>
+                <div class="form-grup">
+                    <div class="label">Name</div>
+                    <input type="text" id="nama">
+                    <div class="label">Email</div>
+                    <input type="text" id="email">
+                    <div class="label">Phone Number</div>
+                    <input type="text" id="phone">
+                    <div class="label">Subject</div>
+                    <select name="subject" id="subject">
+                        <option value="Front End">Front End</option>
+                        <option value="Back End">Back End</option>
+                        <option value="Full Stack">Full Stack</option>
+                    </select>
+                    <div class="label">Your Message</div>
+                    <textarea name="message" id="message"></textarea>
+                    <div class="button" onclick="getData()">
+                        <button class="btn-contact">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="asset/js/script.js"></script>
+</html>

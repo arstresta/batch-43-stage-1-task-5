@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    height: 50px;
+    padding: 10px 0px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #000;
+    transition: all ease 0.2s;
+}
+
+nav a:hover {
+    color: orangered;
+}
+
+.btn-contact a {
+    margin-right: 30px;
+    background-color: #111727;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #111727;
+    transition: all ease 0.3s;
+}
+
+.btn-contact a:hover {
+    background-color: rgb(244, 244, 244);
+    color: #111727;
+}
+
+.container {
+    max-width: 100%;
+    padding: 40px;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.container .card {
+    display: flex;
+    padding: 40px;
+    width: 90%;
+    height: 400px;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px;
+    font-family: arial;
+}
+
+.card .card-left {
+    flex: 70%;
+}
+
+.card-left .text-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-left .text-paragraf{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.card-left .button{
+    display: flex;
+    gap: 30px;
+    margin: 20px 0px;
+}
+
+.button .btn-contact{
+    background-color: #111727;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #111727;
+    border-radius: 20px;
+    transition: all ease 0.3s;
+}
+.button .btn-contact:hover{
+    background-color: #fff;
+    color: #111727;
+}
+
+.button .btn-download{
+    color: #111727;
+    padding: 10px 20px;
+}
+
+.card-left .sosmed{
+    display: flex;
+    gap: 20px;
+}
+
+.sosmed a{
+    background-color: #111727;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.container .card-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 30%;
+}
+
+.card-right .detail{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+.detail .image{
+    width: 250px;
+}
+
+.detail .image img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.detail .desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.detail .text-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.detail .text-paragraf{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.container .form{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.form .form-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form .form-title{
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.form .form-grup{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form .label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.form input,.form select,.form textarea{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px;
+    margin-bottom: 20px;
+}
+
+.form .btn-contact{
+    width: fit-content;
+    float: right;
+    background-color: #111727;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #111727;
+    border-radius: 20px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.form .btn-contact:hover{
+    background-color: #fff;
+    color: #111727;
+}
+
+.form-grup .double{
+    display: flex;
+}
+.double .left{
+    flex: 45%;
+}
+
+.double input{
+    width: 250px;
+}
+
+.item1{grid-area: node;}
+.item2{grid-area: react;}
+.item3{grid-area: next;}
+.item4{grid-area: type;}
+.tech{
+    display: grid;
+    grid-template-areas: 'node next' 'react type';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tech input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.sparator{
+    margin-top: 50px;
+    width: 100%;
+    height: 2px;
+    background-color: #111727;
+}
+
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin: 20px 0px;
+    padding-bottom: 50px;
+}
+
+.blog .card-blog{
+    width: 350px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px 0px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.card-blog image{
+    width: 100%;
+}
+
+.card-blog img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.desc .text-title a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.desc .durasi{
+    color: grey;
+    margin-bottom: 10px;
+}
+.desc .text-paragraf{
+    margin-bottom: 10px;
+}
+.card-blog .icon{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card-blog .button{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.button .btn{
+    flex: 40%;
+    width: 100%;
+    background-color: #111727;
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid #111727;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.button .btn:hover{
+    background-color: #fff;
+    color: #111727;
+}
+
+.detail-blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.detail-blog .text-title{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.detail-blog .detail{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.detail-blog .left{
+    flex: 68%;
+}
+.left img{
+    width: 100%;
+    height: 400px;
+}
+.detail-blog .right{
+    flex: 28%;
+}
+
+.detail-blog .right-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.detail-blog .right-desc{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.technologies .node{grid-area: node;}
+.technologies .react{grid-area: react;}
+.technologies .next{grid-area: next;}
+.technologies .type{grid-area: type;}
+.detail-blog .technologies{
+    display: grid;
+    grid-template-areas: 'node next' 'react type';
+    font-size: 25px;
+}
+
+.detail-blog .paragraf{
+    font-size: 20px;
+    text-align: justify;
+}
